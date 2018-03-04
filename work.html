@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<P ><font color="green" size="6">CLICK THE BUTTON TO GET REVERSE ORDER OF STRING.</font></p>
+
+<button onclick="myFunction()" size="6"><font color="red">TRY IT</font></button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["BANANA", "ORANGE", "APPLE", "MANGO"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    fruits.reverse();
+    document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<body align="center">
+<style>
+body{
+background:url("http://admission.jklu.edu.in/management/source/images/build.jpg");
+background-size:cover;
+}
+</style>
+<p align="center"> <font size="30" color="brown" >INSTITUTE OF ENGINEERING AND TECHNOLOGY </font></p>
+<hr>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value; 
+var rollno=document.myform.rollno.value; 
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}
+else if  (rollno==null || rollno==""){  
+  alert("Roll-NO can't be blank");  
+  return false;
+}
+else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  } 
+  
+  }
+ 
+</script>
+ 
+  <input type="text" id="other" style="display: none;" /> 
+<form name="myform" method="post"  align="center" action="http://www.google.com.in" onsubmit="return validateform()" >  
+<center><font size="4.5">NAME: <input  type="text" align="center" name="name"></font></center>
+</br>
+<center><font size="4.5">ROLL-NO: <input  type="text" align="center" name="rollno"></font></center>
+<br/>  
+<center><font size="4.5">BRANCH:<select onchange="validateform">
+<option value="Type 1">OPTION </option>
+  <option value="Type 1">COMPUTER SCIENCE </option>
+ <option value="Type 2">MECHANICAL </option>
+  <option value="Type 2">CIVIL</option>
+   <option value="Type 2">ELECTRONICS AND COMMUNICATION </option>
+    <option value="Type 2">ELECTRICAL </option></center>
+</select>
+</br>
+</br>
+<center><font size="4.5">PROGRAM DURETION:<select onchange="validateform">
+<option value="Type 1">OPTION </option>
+  <option value="Type 1">4-YEAR</option>
+ <option value="Type 2">5-YEAR</option></center>
+</select>
+</br>
+</br>
+<center><font size="4.5">GENDER:<select onchange="validateform">
+<option value="Type 1">OPTION </option>
+  <option value="Type 1">MALE</option>
+ <option value="Type 2">FEMALE</option></center>
+</select>
+</br>
+</br>
+<center><font size="4.5">EMAIL-ID:<input type="email" name="email"></font></center>
+</br>
+<center><font size="4.5">PASSWORD: <input type="password" name="password"></font></center>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<center><font size="4"><input type="submit" value="Register"> </font> </center>
+</form>  
+</body>
+
